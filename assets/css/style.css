@@ -4,6 +4,21 @@
 ======================== */
 /* MAIN 
 ======================== */
+.flexbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
 /* HEADER 
 ======================== */
 /* CONTENT 
@@ -12,7 +27,6 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  border: 1px solid red;
   background: url("../imgs/hero_mobile.jpg") no-repeat;
   background-size: cover;
   z-index: -1;
@@ -33,9 +47,13 @@
   top: 85px;
   width: 90%;
   left: 50%;
-  transform: translateX(-50%);
   z-index: 10;
   text-align: center;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
 }
 .intro a {
   width: 215px;
@@ -44,7 +62,43 @@
 }
 .intro p {
   color: #fff;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+.subs {
+  padding: 0;
+  margin-top: 25px;
+  justify-content: center;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.subs a {
+  margin: 0 auto;
+  display: block;
+  color: #fff;
+  font-weight: 700;
   font-size: 1.2em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 2px solid white;
+  margin-bottom: 10px;
+}
+
+.copyright {
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #fff;
+}
+.copyright a {
+  color: #fff;
 }
 
 /* FOOTER 
