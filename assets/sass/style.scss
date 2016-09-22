@@ -1,0 +1,45 @@
+/* VARIABLES 
+======================== */
+
+/* MIXIN 
+======================== */
+@mixin transition($x){
+	-webkit-transition: all $x ease;
+	   -moz-transition: all $x ease;
+		-ms-transition: all $x ease;
+		 -o-transition: all $x ease;
+			transition: all $x ease;
+}
+@mixin transform($x,$y){
+	-webkit-transform: translate($x,$y);
+	   -moz-transform: translate($x,$y);
+		-ms-transform: translate($x,$y);
+		 -o-transform: translate($x,$y);
+			transform: translate($x,$y);
+}
+@mixin border-radius($x){
+	-webkit-border-radius: $x;
+	   -moz-border-radius: $x;
+		-ms-border-radius: $x;
+		 -o-border-radius: $x;
+			border-radius: $x;
+}
+
+/* MAIN 
+======================== */
+
+/* HEADER 
+======================== */
+
+/* CONTENT 
+======================== */
+
+/* FOOTER 
+======================== */
+
+/* RESPONSIVE 
+======================== */
+@import 'responsive';
+
+/* ANIMATION 
+======================== */
