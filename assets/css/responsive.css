@@ -1,3 +1,21 @@
 /* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  .page {
+    background: url("../imgs/hero.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .intro p {
+    margin: 15px auto 50px auto;
+    font-size: 1.6em;
+    width: 400px;
+  }
+}
 /* Medium Devices, Desktops */
 /* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  .intro p {
+    font-size: 1.8em;
+  }
+}

@@ -1,6 +1,8 @@
 /* VARIABLES 
 ======================== */
 
+$blue: 				rgb(4,79,103);
+
 /* MIXIN 
 ======================== */
 @mixin transition($x){
@@ -86,6 +88,13 @@
 		width: 215px;
 		margin-bottom: 20px;
 		display: inline-block;
+		text-decoration: none;
+		@include transition(.4s);
+
+		&:hover{
+			background: #fff;
+			color: $blue;
+		}
 	}
 
 	p{
