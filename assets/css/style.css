@@ -19,6 +19,10 @@
   flex-direction: row;
 }
 
+.sweet-alert .sa-icon.sa-info {
+  display: none !important;
+}
+
 /* HEADER 
 ======================== */
 /* CONTENT 
