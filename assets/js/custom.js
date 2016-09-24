@@ -1,4 +1,12 @@
 $(document).ready(function(){
+
+	$.get('http://leuventaste.be/mailchimp/stageinbe.php',
+		function(data){
+			var data = JSON.parse(data);
+			$('.stagezoekenden').html( data.stagezoekenden );
+			$('.stageplaatsen').html( data.stageplaatsen );
+		});
+
 	$('#stagaire').on('click', function(){
 		swal({   
 			title: "Awesome!",
@@ -13,7 +21,6 @@ $(document).ready(function(){
 			showLoaderOnConfirm: true,
 		}, function(){   
 			var email = $('.email_stagaire').val();
-			console.log( email );
 			//if (email === false) return false;      
 			if (email === "") {     
 				swal.showInputError("U hebt geen email adres opgegeven");     
@@ -27,14 +34,14 @@ $(document).ready(function(){
 			    data: $('.stagaire_form').serialize(),
 			    dataType    : 'json',
 			    contentType: "application/json; charset=utf-8",
-			    error       : function(err) {  console.log( err ); },
+			    error       : function(err) {  },
 
 		        success     : function(data) {
 		            if (data.result != "success") {
-		            	console.log( data ); 
 		            	return swal("Humm,..", "Bummer er ging wat mis :(", "error");
 		            } else {
 						return swal("Nice!", "U bent succesvol geregistreerd: " + email, "success");
+			
 		            }
 		        }
 			});
@@ -59,7 +66,6 @@ $(document).ready(function(){
 			showLoaderOnConfirm: true,
 		}, function(){   
 			var email = $('.email_bedrijf').val();
-			console.log( email );
 			//if (email === false) return false;      
 			if (email === "") {     
 				swal.showInputError("U hebt geen email adres opgegeven");     
@@ -72,10 +78,9 @@ $(document).ready(function(){
 			    data: $('.bedrijf_form').serialize(),
 			    dataType    : 'json',
 			    contentType: "application/json; charset=utf-8",
-			    error       : function(err) { console.log( err ); },
+			    error       : function(err) { },
 
 		        success     : function(data) {
-		        	console.log( data );
 		            if (data.result != "success") {
 		            	return swal("Humm,..", "Bummer er ging wat mis :(", "error");
 		            } else {
