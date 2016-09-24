@@ -140,6 +140,7 @@
 }
 
 .counters {
+  display: none;
   text-align: center;
   margin: 20px auto;
 }
@@ -184,6 +185,7 @@
   }
 
   .counters {
+    display: block;
     text-align: center;
     margin: 20px auto;
   }
