@@ -160,18 +160,15 @@ $blue: 				rgb(4,79,103);
 	}
 }
 .counters{
-	text-align: left;
+	text-align: center;
 	margin: 20px auto;
-	width: 60%;
 
 	p{
-		margin-bottom: 5px;
+		margin-bottom: 10px;
 		font-weight: 300;
-		font-size: 1em;
+		font-size: 1.8em;
 
-		span{
-			font-size: 2em;
-		}
+		i 		{margin-left: 10px;}
 	}
 }
 .copyright{

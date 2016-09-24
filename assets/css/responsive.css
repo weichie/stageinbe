@@ -11,15 +11,21 @@
     font-size: 1.6em;
     width: 400px;
   }
+
+  .counters {
+    text-align: center;
+    margin: 20px auto;
+  }
+  .counters p {
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 2em;
+  }
 }
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
   .about {
     width: 75%;
-  }
-
-  .counters p {
-    width: 200px;
   }
 }
 /* Large Devices, Wide Screens */
