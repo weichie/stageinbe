@@ -17,7 +17,7 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-
+	.about 			{width: 75%;}
 }
 
 /* Large Devices, Wide Screens */
@@ -27,4 +27,5 @@
 			font-size: 1.8em;
 		}
 	}
+	.about 			{width: 40%;}
 }

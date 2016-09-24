@@ -67,6 +67,7 @@ $blue: 				rgb(4,79,103);
 	width: 100%;
 	background: url('../imgs/hero_mobile.jpg') no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 	z-index: -1;
 }
 .filter{
@@ -78,7 +79,40 @@ $blue: 				rgb(4,79,103);
 	background: rgba(4,79,103, 0.5);
 	z-index: 0;
 }
+.about{
+	width: 90%;
+	margin: 50px auto;
+	z-index: 10;
+	padding-top: 25px;
+	padding-bottom: 25p;
+	padding-right: 15px;
+	padding-left: 15px;
+	text-align: center;
+	background: rgba(255,255,255,0.8);
 
+	h2{
+		margin-top: 0;
+		margin-bottom: 25px;
+		color: $blue;
+	}
+	
+	h3{
+		margin-top: 50px;
+		text-align: left;
+		font-size: 1.5em;
+		color: $blue;
+	}
+	p{
+		color: #555;
+		text-align: left;
+	}
+
+	.back{
+		display: block;
+		margin-top: 50px;
+		color: $blue;
+	}
+}
 .intro{
 	position: absolute;
 	top: 85px;
