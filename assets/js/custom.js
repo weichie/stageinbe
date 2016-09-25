@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	$.get('http://leuventaste.be/mailchimp/stageinbe.php',
+	$.get('load.php',
 		function(data){
 			var data = JSON.parse(data);
 			$('.stagezoekenden').html( data.stagezoekenden );
@@ -30,7 +30,7 @@ $(document).ready(function(){
 			//$('.stagaire_form').submit();
 			$.ajax({
 				type: "GET", // GET & url for json slightly different
-			    url: "http://stagein.us14.list-manage.com/subscribe/post-json?u=e6e6609f5afaac9814bb4f7c1&id=0f26dba48e&c=?",
+			    url: "//stagein.us14.list-manage.com/subscribe/post-json?u=e6e6609f5afaac9814bb4f7c1&id=0f26dba48e&c=?",
 			    data: $('.stagaire_form').serialize(),
 			    dataType    : 'json',
 			    contentType: "application/json; charset=utf-8",
@@ -74,7 +74,7 @@ $(document).ready(function(){
 
 			$.ajax({
 				type: "GET", // GET & url for json slightly different
-			    url: "http://stagein.us14.list-manage.com/subscribe/post-json?u=e6e6609f5afaac9814bb4f7c1&id=a2e75c0e9d&c=?",
+			    url: "//stagein.us14.list-manage.com/subscribe/post-json?u=e6e6609f5afaac9814bb4f7c1&id=a2e75c0e9d&c=?",
 			    data: $('.bedrijf_form').serialize(),
 			    dataType    : 'json',
 			    contentType: "application/json; charset=utf-8",
